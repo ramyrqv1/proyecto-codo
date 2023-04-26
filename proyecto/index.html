@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+    <title>Tecnodidacta</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-link">sobre tecnodidacta</a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-link">capacitaciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-link">cursos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-link">contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <!-- titulo y descripcion -->
+            <section class="nombre-titulo">
+                <h1 class="titulo ">TECNODIDACTA</h1>
+                <h2 class="titulo-desc ">Servicio de consultoría y enseñanza especializada en educación digital.</h2>
+            </section>
+                <p class="titulo-descripcion">Nuestro compromiso es brindar orientaciones para que puedan incorporar en las prácticas áulicas e institucionales de forma significativa, los enfoques relacionados con la enseñanza con tecnologías digitales.</p>
+                <!-- que ofrece tecnodidacta -->
+            <section>
+                <div>
+                    La educación digital es la incorporación innovadora de tecnología moderna y herramientas digitales para ayudar y fortalecer las actividades de la enseñanza y el aprendizaje. También se conoce como aprendizaje mejorado por tecnología, aprendizaje digital o aprendizaje electrónico. La educación digital es el camino a seguir para buscar educación a través de la tecnología y los dispositivos digitales.
+                </div>
+            </section>
+             <!-- capacitaciones y cursos -->
+            <section>
+
+            </section>
+        </main>
+        <!-- footer -->
+        <div class="footer">
+            <!-- iconos de redes -->
+            <ul class="list">
+                <li class="list-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
+                <li class="list-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                <li class="list-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
+              </ul>
+
+              <h4 style="text-align: center;">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h4>
+        </div>
+    </div> 
+    
+    <script>
+    const navToggle = document.querySelector(".nav-toggle")
+    const navMenu = document.querySelector(".nav-menu")
+
+    navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible")
+    })
+    </script>
+</body>
+</html>
