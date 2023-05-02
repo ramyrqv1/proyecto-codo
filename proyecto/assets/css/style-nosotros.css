@@ -1,0 +1,30 @@
+.main{
+    background: linear-gradient( rgba(103, 6, 240, 0.033), rgba(5, 7, 12, 0.15));
+    border-radius: 10px;
+    
+}
+.nosotros{
+    padding-left:20px ;
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(57, 57, 229, 0.852);
+    -webkit-text-stroke: black 1px;
+}
+.nosotros-desc{
+    font-size: 1em;
+    padding:  20px;
+}
+.image{
+    display: block;
+    text-align: center;
+    padding: 50px 10%;
+}
+.image-item{
+    width: 300px;
+    margin: 20px 20px;
+    padding: 0;
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: rgba(109, 56, 165, 0.575)5px 5px 6px;
+}

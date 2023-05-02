@@ -9,7 +9,7 @@
     height: 100%;
     display: grid;
     gap: 5px;
-    grid-template-rows: 0.55fr 4fr 1fr;
+    grid-template-rows: 75px 6fr 1fr;
     grid-template-areas:
       'header header header'
       'main main main'
@@ -30,6 +30,7 @@
   .main {
     grid-area: main;
     background-color: whitesmoke;
+    padding:0 5px;
   }
   
   .footer {
@@ -37,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.104);
   }
   /* header */
-  .nav{
+  .navi{
     display: flex;
     justify-content: space-between;  /* Aplicamos separación a los elementos dentro del ul */
     margin: 0 auto;
@@ -46,9 +47,9 @@
     width: 100px;
     font-weight: bold;
     line-height: 70px;
-    padding: 0 40px;
+    padding: 0 3px ;
   }
-  .nav-link{
+  .nav-links{
     color: rgb(6, 6, 6);
     text-decoration: none;
   }
@@ -56,7 +57,7 @@
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 40px;
+    margin-right: 10px;
     list-style: none;
   }
   .nav-item{
@@ -102,7 +103,7 @@
     .nav-item{
       line-height: 70px;
     }
-    .nav-link{
+    .nav-links{
       color: white;
     }
     .nav-menu-link:hover{
@@ -118,48 +119,93 @@
   }
   /* area main-titulo */
   .nombre-titulo{
-    background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40) ),
+    background: linear-gradient(rgba(5, 7, 12, 0.051), rgba(5, 7, 12, 0.051) ),
     url(../img/fondo-titulo.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
-    box-shadow:  21px 21px 41px #a6a6a6,
   }
   .titulo{
-    text-align: start;
-    font-size: 9vw;
+    text-align: center;
+    font-size: 6vw;
     font-style: italic;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 5px;
-    padding-top: 1%;
-    padding-left: 20px;
+    padding-top: 2%;
+    padding-left: 60px;
+    padding-right: 50%;
     -webkit-text-stroke: 1px rgb(107, 60, 156);
-    color: rgb(193, 109, 19);
+    color: rgba(82, 33, 241, 0.364);
    text-shadow: rgba(109, 56, 165, 0.705) 5px 5px 6px;
   }
   .titulo-desc{
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
-    color: rgb(107, 60, 156);
-    margin-top: 2em;
-    padding-right: 21%;
-    padding-bottom: 5px;
-    -webkit-text-stroke: 1px orange;
-    text-shadow: rgba(251, 251, 252, 0.677) 5px 5px 6px;
+    color: rgba(37, 11, 235, 0.466);
+    margin-top: 5em;
+    padding-right: 43%;
+    padding-bottom: 2em;
+    -webkit-text-stroke: 1px rgba(97, 21, 220, 0.886);
+    text-shadow: rgba(24, 24, 26, 0.677) 5px 5px 6px;
   }
   .titulo-descripcion{
+    display: flex;
     font-size: 2vw;
     font-style: italic;
+    margin-top: 1em;
     margin-left: 5px;
     margin-right: 5px;
+    padding-left: 10px;
     text-align: center;
-    background-color: rgba(114, 94, 181, 0.286);
+    background-color: rgba(199, 184, 247, 0.286);
     border-radius: 10px;
-    background: linear-gradient(145deg, #9d95d8a0, #f0f0f0);
-    box-shadow:  21px 21px 41px #a6a6a6,
-             -21px -21px 41px #fbeeee;
+    background: linear-gradient(145deg, #e6f3e6a0, #f0f0f0);
+    box-shadow:  5px 5px 5px #a6a6a6;
+  }
+  .contenedor{
+    padding: 5px 10px;
+    margin: 20px 5px;
+    background: linear-gradient(145deg, #e6f3e6a0, #f0f0f0);
+    box-shadow:  5px 5px 5px #a6a6a6;
+    border-radius: 10px;
+  }
+  .contenedor-1sec{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .contenedor-2sec{
+    padding: 10 0;
+  }
+  .contenedor-3sec{
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .accordion{
+    margin: 5px 50px;
+
+  }
+  .accordion:hover{
+    transform: scale(1.03);
+    transition: 0.8s; 
+  }
+  /* servicios */
+  .service{
+    display: flexbox;
+    text-align: center;
+  }
+  .service a img{
+    width: 300px;
+    margin: 20px 20px;
+    border-radius: 21px;
+    box-shadow: 20px 20px 12px #223d619f,
+            -20px -20px 12px #78c0ff35;
+    transition: 0.8s;        
+  }
+  .service a img:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
   }
   /* footer */
   .list{
@@ -172,3 +218,4 @@
   .list-item{
     margin-right: 1em;
   }
+  

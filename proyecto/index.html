@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- google fonts -->
@@ -14,22 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
      <!-- font awesome -->
      <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+     <!-- icono title -->
+     <link rel="icon" href="assets/img/logo.ico">
     <title>Tecnodidacta</title>
 </head>
 <body>
     <div class="grid-container">
         <!-- header -->
         <header class="header">
-            <nav class="nav">
+            <nav class="navi">
                 <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
                 <button class="nav-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-link">sobre tecnodidacta</a></li>
-                    <li class="nav-item"><a href="#" class="nav-menu-link nav-link">capacitaciones</a></li>
-                    <li class="nav-item"><a href="#" class="nav-menu-link nav-link">cursos</a></li>
-                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-link">contacto</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
+                    <li class="nav-item"><a href="#service-1" class="nav-menu-link nav-links">nuestros servicios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-links">cursos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,18 +41,100 @@
         <main class="main">
             <!-- titulo y descripcion -->
             <section class="nombre-titulo">
-                <h1 class="titulo ">TECNODIDACTA</h1>
+                <h1 class="titulo ">SOMOS <br> TECNODIDACTA</h1>
                 <h2 class="titulo-desc ">Servicio de consultoría y enseñanza especializada en educación digital.</h2>
             </section>
-                <p class="titulo-descripcion">Nuestro compromiso es brindar orientaciones para que puedan incorporar en las prácticas áulicas e institucionales de forma significativa, los enfoques relacionados con la enseñanza con tecnologías digitales.</p>
+            <div class="titulo-descripcion">
+                <p>Nuestro compromiso es brindar orientaciones para que puedan incorporar en las prácticas áulicas e institucionales de forma significativa, los enfoques relacionados con la enseñanza con tecnologías digitales.</p>
+            </div>
+            
                 <!-- que ofrece tecnodidacta -->
-            <section>
-                <div>
-                    La educación digital es la incorporación innovadora de tecnología moderna y herramientas digitales para ayudar y fortalecer las actividades de la enseñanza y el aprendizaje. También se conoce como aprendizaje mejorado por tecnología, aprendizaje digital o aprendizaje electrónico. La educación digital es el camino a seguir para buscar educación a través de la tecnología y los dispositivos digitales.
+            <section class="contenedor">
+                <div class="contenedor-1sec">
+                    <p>La educación digital es la incorporación innovadora de tecnología moderna y herramientas digitales para ayudar y fortalecer las actividades de la enseñanza y el aprendizaje. También se conoce como aprendizaje mejorado por tecnología, aprendizaje digital o aprendizaje electrónico. La educación digital es el camino a seguir para buscar educación a través de la tecnología y los dispositivos digitales. <br>Algunas de las ventajas de transitar hacia sistemas de educación digital son los siguientes:
+                    </p>
+                </div>
+                <div class="accordion contenedor-2sec" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <strong> Experiencias de aprendizaje individualizadas </strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Un gran inconveniente del sistema educativo tradicional es que muchos estudiantes experimentan una falta de interés cuando no pueden ponerse al día con el resto de la clase. El formato digital contemporáneo permite a las y los docentes personalizar el material de estudio en función de la velocidad y la capacidad de aprendizaje de cada persona
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion contenedor-2sec" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <strong> Estudiantes con nuevas competencias </strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Cuando se exponen a nuevas herramientas de aprendizaje y tecnología, las y los estudiantes tienden a desarrollar habilidades de aprendizaje autodirigidas efectivas. Un sistema de educación digital permite a los estudiantes desarrollar nuevas competencias relacionadas con el análisis de lo que necesitan saber para poder buscar y utilizar recursos en línea
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion contenedor-2sec" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <strong> Aulas inteligentes </strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            El método de tiza y conversación no es la única alternativa ya que las y los docentes están utilizando métodos alternos con apoyo de las tecnologías para ayudar a sus estudiantes a comprender que el aprendizaje puede ser innovador y divertido. Las aulas modernas están equipadas con un televisor o un proyector que facilita el cambio de una sesión de clase regular a una sesión digital interactiva. Esto puede hacer que las y los estudiantes presten más atención, ya que están muy familiarizados con el mundo digital
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion contenedor-2sec" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            <strong> Aprendizaje de alto compromiso </strong>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            El sistema educativo tradicional tiende a manifestar un alcance puntual ya que se basa en elementos limitados como libros de texto, el o la docente y notas escritas a mano, mientras que un sistema educativo digitalizado ofrece una amplia gama de opciones para aprender. La disponibilidad de recursos hace que cada sesión pueda ser innovadora y atractiva. Las sesiones de aprendizaje interactivas y basadas en juegos usualmente obtienen una mayor participación de los estudiantes
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion contenedor-2sec" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                          <strong> Actualización digital y facilidad para compartir </strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          En un mundo en constante evolución en términos de tecnología, las prácticas y la información pueden volverse obsoletas fácilmente, ya que siempre hay algo nuevo que sucede. Dotar a las y los estudiantes con información actualizada ya no es una cuestión de elección, sino un proceso obligatorio. Las y los los estudiantes tienden a pasar mayor parte de su tiempo en teléfonos y computadoras portátiles, por lo que el uso de la tecnología es algo más común para ellos. <br><strong> Facilidad para compartir</strong> el sistema educativo tradicional dependería en gran medida de que las y los estudiantes mantengan libretas con notas escritas a mano que contengan información proporcionada por sus docentes en el aula o adquirida a través de una extensa investigación en la biblioteca, pero un sistema educativo digital, es posible conservar y compartir información de manera rápida, lo que ahorra a las y los estudiantes mucho tiempo y trabajo físico
+                        </div>
+                      </div>
+                  </div>
+                </div>   
+                <div class="contenedor-3sec">
+                    <p>Cambiar no solo lo que aprendemos, sino también cómo aprendemos es la necesidad del momento. La participación de las plataformas digitales, el mundo digital, la realidad aumentada, las bibliotecas en línea y los seminarios web son la nueva pizarra de los sistemas educativos, mientras que los motores de búsqueda se han convertido en la nueva biblioteca. <br> Desde Tecnodidactica el espíritu de nuestra labor es el de acompañar, capacitar, informar y planificar, para que el resultado sea óptimo. Nos especializamos en todos los ejes contemplados en el Diseño Curricular de educación digital</p>
                 </div>
             </section>
              <!-- capacitaciones y cursos -->
-            <section>
+            <section class="service">
+              <h1 id="service-1">NUESTROS SERVICIOS</h1>
+                <a href="#"><img src="assets/img/asesoria-instituciones.png" alt="asesoria tecnodidacta"></a>
+                <a href="#"><img src="assets/img/docentes-tecnodidacta.png" alt="docentes tecnodidacta"></a>
+                <a href="#"><img src="assets/img/secundaria-tecnodidacta.png" alt="secundaria tecnodidacta"></a>
+                <a href="#"><img src="assets/img/primaria-tecnodidacta.png" alt="primaria tecnodidacta"></a>
 
             </section>
         </main>
@@ -56,11 +142,10 @@
         <div class="footer">
             <!-- iconos de redes -->
             <ul class="list">
-                <li class="list-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
-                <li class="list-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
-                <li class="list-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
+                <li class="list-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x text-black"></i></a></li>
+                <li class="list-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x text-black"></i></a></li>
+                <li class="list-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x text-black"></i></a></li>
               </ul>
-
               <h4 style="text-align: center;">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h4>
         </div>
     </div> 
@@ -73,5 +158,6 @@
     navMenu.classList.toggle("nav-menu_visible")
     })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
