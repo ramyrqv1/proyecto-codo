@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+     <!-- icono title -->
+     <link rel="icon" href="assets/img/logo.ico">
+    <title>Tecnodidacta</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <nav class="navi">
+                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-links">cursos</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- trabaja con nosotros -->
+        <section class="main">
+            <div class="content">
+                <div class="content-perfil">
+                    <h2>perfil solicitado</h2>
+                </div>
+                <form class="form-trabaja" action="/my-handling-form" method="post">
+                    <label for="name" class="form-label">Nombre y Apellido</label>
+                    <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="nombre y apellido" id="name" name="user_name">
+                    
+                    <label for="email" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1 mail" placeholder="name@example.com" name="user_mail">
+
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input class="form-control" type="text" placeholder="cod. pais + codigo area + numero" aria-label="" id="phone" name="user_phone">
+
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input class="form-control" type="text" placeholder="Asunto" aria-label="Asunto" id="asunto" name="user_asunto">
+                    
+                    <label for="presentacion" class="form-label">Presentacion</label>
+                    <textarea class="form-control" id="msg" rows="3" name="user_msg"></textarea>
+                    
+                     <label for="formFile" class="form-label">Agrega tu C.V.</label>
+                    <input class="form-control" type="file" id="formFile" name="user_formFile"><br>
+
+                    <input type="submit" value="Enviar Formulario" />
+
+                </form>    
+                
+            </div>
+        </section>
+        <!-- footer -->
+        <div class="footer">
+            <!-- iconos de redes -->
+            <ul class="list">
+                <li class="list-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x text-black"></i></a></li>
+                <li class="list-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x text-black"></i></a></li>
+                <li class="list-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x text-black"></i></a></li>
+              </ul>
+              <h4 style="text-align: center;">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h4>
+        </div>
+    </div>
+    <script>
+        const navToggle = document.querySelector(".nav-toggle")
+        const navMenu = document.querySelector(".nav-menu")
+    
+        navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-menu_visible")
+        })
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

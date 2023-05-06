@@ -24,7 +24,9 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: whitesmoke;
+    background-color: rgba(187, 185, 185, 0.732);
+    position: fixed;
+    z-index: 999;
   }
   
   .main {
@@ -67,13 +69,14 @@
     text-transform: uppercase;
     width: max-content;
     font-weight: bold;
+    text-shadow: #f0f0f0 2px 2px 1px;
   }
   .nav-menu-link{
     padding: 8px 12px;
     border-radius: 3px;
   }
   .nav-menu-link:hover{
-    background-color: rgba(200, 189, 189, 0.533);
+    background-color: rgba(30, 134, 238, 0.245);
     transition: 0.5s;
   }
   .nav-toggle{
@@ -89,7 +92,7 @@
     .nav-menu{
       flex-direction: column;
       align-items: center;
-      background-color: rgb(93, 92, 92);
+      background-color: rgba(93, 92, 92, 0.892);
       position: fixed;
       margin-left: 30%;
       top: 80px;
@@ -102,6 +105,7 @@
     }
     .nav-item{
       line-height: 70px;
+      text-shadow: none;
     }
     .nav-links{
       color: white;
@@ -123,7 +127,8 @@
     url(../img/fondo-titulo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 5px;
+    min-height: 242px;
   }
   .titulo{
     text-align: center;
@@ -167,9 +172,7 @@
   .contenedor{
     padding: 5px 10px;
     margin: 20px 5px;
-    background: linear-gradient(145deg, #e6f3e6a0, #f0f0f0);
-    box-shadow:  5px 5px 5px #a6a6a6;
-    border-radius: 10px;
+   
   }
   .contenedor-1sec{
     font-size: 1rem;
@@ -181,6 +184,9 @@
   .contenedor-3sec{
     font-size: 1rem;
     padding: 10px 20px;
+  }
+  .contenedor-3sec iframe{
+    margin-left: 20px;
   }
   .accordion{
     margin: 5px 50px;
@@ -207,6 +213,10 @@
     transform: scale(1.05);
     transition: 0.8s;
   }
+  .competencias{
+    margin: 20px 5px;
+    padding: 5px 20px;
+  }
   /* footer */
   .list{
     display: flex; /* Hacemos flex al ul */
@@ -218,4 +228,26 @@
   .list-item{
     margin-right: 1em;
   }
-  
+  /* -------trabaja con nosotros-------- */
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+  }
+  .content-perfil{
+    flex-basis: 45vw;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .form-trabaja{
+    flex-basis: 0;
+    flex-grow: 9;
+    min-width: 50%;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 20px #2f2f30,
+    inset -10px -10px 20px #9da7b5;
+  }
+  .form-trabaja label{
+    margin-top: 3px;
+  }
