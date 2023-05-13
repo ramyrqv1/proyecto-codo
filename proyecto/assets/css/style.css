@@ -24,7 +24,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(187, 185, 185, 0.732);
+    /* background-color: rgba(187, 185, 185, 0.732); */
+    background: rgba(0, 0, 0, 0.141);
     position: fixed;
     z-index: 999;
   }
@@ -42,7 +43,7 @@
   /* header */
   .navi{
     display: flex;
-    justify-content: space-between;  /* Aplicamos separación a los elementos dentro del ul */
+    justify-content: space-between;  /* Aplica separación a los elementos dentro del ul */
     margin: 0 auto;
   }
   .logo{
@@ -61,6 +62,7 @@
     margin-bottom: 0;
     margin-right: 10px;
     list-style: none;
+    padding: 0;
   }
   .nav-item{
     font-size: 18px;
@@ -69,15 +71,20 @@
     text-transform: uppercase;
     width: max-content;
     font-weight: bold;
-    text-shadow: #f0f0f0 2px 2px 1px;
+    text-shadow: #57a3b050 2px 2px 1px;
   }
   .nav-menu-link{
     padding: 8px 12px;
-    border-radius: 3px;
+    border-radius: 6px;
   }
   .nav-menu-link:hover{
-    background-color: rgba(30, 134, 238, 0.245);
+    background-color: rgba(41, 194, 130, 0.508);
     transition: 0.5s;
+  }
+  .nav-menu-link:active{
+    background: #1da88a;
+	box-shadow: inset 10px 10px 10px #198f75,
+            inset -10px -10px 10px #21c19f;
   }
   .nav-toggle{
     background: none;
@@ -88,6 +95,7 @@
     display: none;
     cursor: pointer;
   }
+  /* ----------corte medio --------- */
   @media screen and (max-width: 768px){
     .nav-menu{
       flex-direction: column;
@@ -112,7 +120,7 @@
     }
     .nav-menu-link:hover{
       background: none;
-      color: rgb(93, 147, 194);
+      color: rgba(79, 175, 125, 0.767);
     }
     .nav-toggle{
       display: block;
@@ -125,7 +133,7 @@
   .nombre-titulo{
     background: linear-gradient(rgba(5, 7, 12, 0.051), rgba(5, 7, 12, 0.051) ),
     url(../img/fondo-titulo.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 5px;
     min-height: 242px;
@@ -169,36 +177,51 @@
     background: linear-gradient(145deg, #e6f3e6a0, #f0f0f0);
     box-shadow:  5px 5px 5px #a6a6a6;
   }
+  /* descripcion del trabajo de tecnodidacta */
   .contenedor{
-    padding: 5px 10px;
-    margin: 20px 5px;
+    padding: 5px 0;
+    margin: 20px 0;
    
   }
   .contenedor-1sec{
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 2.5vh;
+    padding: 10px 40px;
   }
   .contenedor-2sec{
     padding: 10 0;
   }
   .contenedor-3sec{
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-  .contenedor-3sec iframe{
-    margin-left: 20px;
+    font-size: 2.5vh;
+    padding: 10px 40px;
   }
   .accordion{
     margin: 5px 50px;
-
   }
   .accordion:hover{
     transform: scale(1.03);
     transition: 0.8s; 
   }
+  .ejes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 5px;
+    padding: 5px 5px;
+    font-size: 2.5vh;
+    justify-content: space-evenly;
+  }
+  .ejes p{
+    margin: 20px 10px;
+  }
+  .ejes iframe{
+    flex-basis: 0;
+    flex-grow: 0;
+    min-width: 560px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
   /* servicios */
   .service{
-    display: flexbox;
+    display: block;
     text-align: center;
   }
   .service a img{
@@ -213,29 +236,114 @@
     transform: scale(1.05);
     transition: 0.8s;
   }
+  #service-1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #fbab3bc2;
+    -webkit-text-stroke: 1px rgba(251, 58, 58, 0.39);
+    text-shadow: 3px 3px 5px #c0c0c1,
+    -2px -2px 3px #9da7b5;
+  }
   .competencias{
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 2.5vh;
+  }
+  .competencias p{
+    padding: 0 40px;
+  }
+  .competencias-1{
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px 5px;
     padding: 5px 20px;
+    font-size: 2.5vh;
+    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .competencias-1 p{
+   margin: 20px 20px;
+  } 
+  .competencias-1 iframe{
+    flex-basis: 0;
+    flex-grow: 0;
+    min-width: 560px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 770px){
+    .nombre-titulo{
+      background: url(../img/fondo-1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .titulo{
+    font-size: 6vh;
+  }
+  .titulo-desc{
+    font-size: 3vh;
+    text-shadow: rgba(24, 24, 26, 0.677) 2px 2px 4px;
+  }
+  .titulo-descripcion{
+    font-size: 2.5vh;
+  }
+  }
+ /*  boton de whatsaap */
+  .btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color:#fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+  .btn-wsp:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #0df053;
   }
   /* footer */
-  .list{
+  .lista{
     display: flex; /* Hacemos flex al ul */
     justify-content: center;
+    margin: 10px 0;
     padding: 2px;
     list-style-type: none;
     overflow: hidden;
   }
-  .list-item{
-    margin-right: 1em;
+  .lista-item{
+    margin-right: 2em;
+    margin-left: 2em;
+    padding: 10px 0;
+  }
+  .footer h5{
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+
+  }
+  .footer-items{
+    margin:5px 20px;
   }
   /* -------trabaja con nosotros-------- */
   .content{
+    background: #ecf0f3;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 20px;
+    padding: 3%;
   }
   .content-perfil{
-    flex-basis: 45vw;
+    flex-basis: 17rem;
     flex-grow: 1;
     text-align: center;
   }
@@ -245,9 +353,63 @@
     min-width: 50%;
     padding: 10px 30px;
     border-radius: 15px;
-    box-shadow: inset 10px 10px 20px #2f2f30,
-    inset -10px -10px 20px #9da7b5;
+    border-style: line;
+    box-shadow: inset 10px 10px 20px #adadad,
+    inset -15px -15px 15px #ffffff;
   }
   .form-trabaja label{
     margin-top: 3px;
+  }
+
+  /* --------------corte pequeño */
+  @media screen and (max-width: 320px){
+    .nav-menu{
+    margin-left: 0;
+    width: 100%;
+    right: 100%;
+    }
+    .contenedor-1sec{
+      padding: 5px;
+    }
+    .contenedor-2sec{
+      padding: 5px 0;
+    }
+    .contenedor-3sec{
+      padding: 10px 5px;
+    }
+    .accordion{
+      margin: 5px 30px;
+    }
+    .ejes{
+      margin: 40px 0;
+      padding: 5px 5px;
+    }
+    .ejes p{
+      margin: 20px 5px;
+    }
+    .ejes iframe{
+      min-width: 280px;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    .competencias{
+      margin: 20px 0;
+      padding: 5px 0;
+    }
+    .competencias p{
+      padding: 0 40px;
+    }
+    .competencias-1{
+      margin: 20px 5px;
+      padding: 5px 10px;
+    
+    }
+    .competencias-1 p{
+     margin: 20px 5px;
+    } 
+    .competencias-1 iframe{
+      min-width: 280px;
+      margin-top: 20px;
+      margin-left: 0;
+    }
   }

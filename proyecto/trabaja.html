@@ -32,9 +32,8 @@
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
                     <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
-                    <li class="nav-item"><a href="#" class="nav-menu-link nav-links">cursos</a></li>
                     <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
-                    
+                    <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -44,7 +43,7 @@
                 <div class="content-perfil">
                     <h2>perfil solicitado</h2>
                 </div>
-                <form class="form-trabaja" action="/my-handling-form" method="post">
+                <form class="form-trabaja" action="https://formsubmit.co/quisperamiro790@gmail.com" method="post" enctype="multipart/form-data">
                     <label for="name" class="form-label">Nombre y Apellido</label>
                     <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="nombre y apellido" id="name" name="user_name">
                     
@@ -64,7 +63,7 @@
                     <input class="form-control" type="file" id="formFile" name="user_formFile"><br>
 
                     <input type="submit" value="Enviar Formulario" />
-
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/trabaja.html">
                 </form>    
                 
             </div>
@@ -72,12 +71,12 @@
         <!-- footer -->
         <div class="footer">
             <!-- iconos de redes -->
-            <ul class="list">
-                <li class="list-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x text-black"></i></a></li>
-                <li class="list-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x text-black"></i></a></li>
-                <li class="list-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x text-black"></i></a></li>
+            <ul class="lista">
+                <li class="lista-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x" style="color: black;"></i></a></li>
               </ul>
-              <h4 style="text-align: center;">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h4>
+              <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h5>
         </div>
     </div>
     <script>

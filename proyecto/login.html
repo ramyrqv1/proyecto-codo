@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style-nosotros.css">
     <!-- animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/login-st.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,28 +24,43 @@
         <!-- header -->
         <header class="header">
             <nav class="navi">
-                <a href="index.html"><img  class="logo" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
                 <button class="nav-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
-                    <li class="nav-item"><a href="trabaja.html" class="nav-menu-link nav-links">trabaja con nosotros</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
                     <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
+                    
                 </ul>
             </nav>
         </header>
         <!-- main -->
         <div class="main">
-            <h1 class="nosotros">SOMOS TECNODIDACTA</h1>
-            <p class="nosotros-desc">Somos un equipo de Licenciados en <strong> enseñanza con tecnología digital</strong>, con amplia experiencia profesional en el ámbito educativo desde diferentes roles, tanto en el ámbito estatal como privado. Hace varios años que trabajamos en espacios educativos que buscan estar a la vanguardia en educación digital. <br><br> Enfocados significativamente desde nuestro rol siempre buscamos  incorporar  toda la experiencia profesional adquirida a lo largo de  años en la docencia, con el propósito de  brindar un servicio de asesoramiento de calidad. <br><br> Desde que nos agrupamos no solo asesoramos escuelas de ambas gestiones  y empresas privadas, sino que además, brindamos nuestros servicios a Ministerios de Educación como el de la provincia de Tucumán y de la Ciudad Autónoma de Buenos Aires, entre otros. <br><br> En resumen, somos garantía de experiencia. <br> Presentamos a los responsables de este gran equipo: </p>
-            <div class="image">
-                <img class="image-item" src="assets/img/directora.png" alt="foto directora">
-                <img class="image-item" src="assets/img/cofundadora.png" alt="foto cofundadora">
-                <img class="image-item" src="assets/img/implementadora.png" alt="foto implementadora">
-            </div>
-            <p class="nosotros-desc">Contamos con un amplio grupo de profesores y especialistas con una gran trayectoria vinculada a la educación digital, que día a día nos acompañan con gran dedicación y entusiasmo</p>
+            <div class="contains">
+                <section id="formulario">
+                    <div class="logo-in"></div>
+                    <form action="">
+                        <h1>TECNODIDACTA</h1>
+                        <h3> login</h3>
+                        <div>
+                            <input type="text" placeholder="Username" required="" id="username" />
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Password" required="" id="password" />
+                        </div>
+                        <div>
+                            <input type="submit" class="btn-input" value="Log in" />
+
+                            <a class="ref" href="#">Te olvidaste tu contraseña? <br></a>
+                            <a  class="ref" href="#">Registrate aqui </a>  
+                        </div>
+                  </form><!-- form -->
+                </section><!-- content -->
+            </div><!-- container -->
+           
         </div>
         <!-- footer -->
         <div class="footer">
@@ -55,7 +70,6 @@
                 <li class="lista-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x" style="color: black;"></i></a></li>
                 <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x" style="color: black;"></i></a></li>
               </ul>
-
               <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h5>
         </div>
     </div> 
