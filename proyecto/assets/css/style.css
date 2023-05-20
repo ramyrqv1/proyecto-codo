@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     /* background-color: rgba(187, 185, 185, 0.732); */
-    background: rgba(0, 0, 0, 0.141);
+    background: rgba(245, 245, 245, 0.822);
     position: sticky;
     z-index: 999;
   }
@@ -132,33 +132,44 @@
   /* area main-titulo */
   .nombre-titulo{
     background: linear-gradient(rgba(5, 7, 12, 0.051), rgba(5, 7, 12, 0.051) ),
-    url(../img/fondo-titulo.png);
-    background-size: contain;
+    url(../img/fondo2.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     min-height: 242px;
   }
   .titulo{
     text-align: center;
-    font-size: 6vw;
+    font-size: 8vw;
     font-style: italic;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 5px;
     padding-top: 2%;
-    padding-left: 60px;
-    padding-right: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: transparent;
     -webkit-text-stroke: 1px rgb(107, 60, 156);
-    color: rgba(82, 33, 241, 0.364);
+    background: url(../img/fondo-pr.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 40s linear infinite alternate;
+    /* color: rgba(82, 33, 241, 0.364); */
    text-shadow: rgba(109, 56, 165, 0.705) 5px 5px 6px;
   }
+  @keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
   .titulo-desc{
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
     color: rgba(37, 11, 235, 0.466);
-    margin-top: 5em;
-    padding-right: 43%;
+    margin-top: 3em;
+    padding-right: 10%;
+    padding-left: 10%;
     padding-bottom: 2em;
     -webkit-text-stroke: 1px rgba(97, 21, 220, 0.886);
     text-shadow: rgba(24, 24, 26, 0.677) 5px 5px 6px;
@@ -275,18 +286,12 @@
     margin-left: 20px;
   }
   @media screen and (max-width: 768px){
-    .nombre-titulo{
-      background: white, url(../img/fondo-1.png);
-      background-size: contain;
-      background-position: center bottom;
-      background-repeat: no-repeat;
-    }
     .titulo{
-    font-size: 8vh;
-    padding-left: 10px;
+    font-size: 10vh;
+    text-align: center;
     }
   .titulo-desc{
-    font-size: 3vh;
+    font-size: 4vh;
     text-shadow: rgba(24, 24, 26, 0.677) 2px 2px 4px;
     margin-top: 1.5em;
     padding-bottom: 1em;
