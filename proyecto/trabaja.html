@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
      <!-- font awesome -->
      <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+     <!-- javascript -->
+     <script defer src="./app.js"></script>
      <!-- icono title -->
      <link rel="icon" href="assets/img/logo.ico">
     <title>Tecnodidacta</title>
@@ -42,28 +44,29 @@
             <div class="content">
                 <div class="content-perfil">
                     <h2>perfil solicitado</h2>
+                    <p>Buscamos gente con conocimiento en robótica y habilidades tecnológicas para unirse a nuestro equipo de desarrollo e innovación.<br><b> El candidato ideal debe tener: </b><br><br>&#45 Experiencia en programación de lenguajes como Python, C++, Java o similares.<br>&#45 Conocimiento en robótica, sistemas embebidos, sensores, actuadores y comunicaciones inalámbricas. <br>&#45 Habilidades tecnológicas para trabajar con herramientas como Arduino, Raspberry Pi, ROS o similares. <br>&#45 Capacidad para trabajar en equipo, resolver problemas y aprender de forma autónoma. <br>&#45 Interés por la investigación y el desarrollo de soluciones innovadoras en el campo de la robótica. <br><b>Ofrecemos:</b> <br>&#45 Un ambiente de trabajo dinámico y creativo con proyectos desafiantes y variados. <br>&#45 Oportunidades de crecimiento profesional y personal. <br>&#45 Salario competitivo y beneficios acordes al mercado. <br>&#45 Horario flexible y modalidad de trabajo remoto o presencial. <br><br>Si te interesa esta oportunidad, llena el formulario y envíanos tu currículum vitae</p>
                 </div>
-                <form class="form-trabaja" action="https://formsubmit.co/quisperamiro790@gmail.com" method="post" enctype="multipart/form-data">
-                    <label for="name" class="form-label">Nombre y Apellido</label>
-                    <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="nombre y apellido" id="name" name="user_name">
-                    
-                    <label for="email" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1 mail" placeholder="name@example.com" name="user_mail">
-
+                <form id="formulario" class="form-trabaja" action="https://formsubmit.co/dabebbc2f2a7b467691b3bb434b1e9f7" method="post" enctype="multipart/form-data" name="formulario">
+                    <label for="usuario" class="form-label">Nombre y Apellido</label>
+                    <input class="form-control" type="text" placeholder="Nombre y Apellido" aria-label="nombre y apellido" id="usuario" name="nombre-usuario" required>
+                    <span></span><br>
+                    <label for="mail" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="user-email" required>
+                    <span></span><br>
                     <label for="telefono" class="form-label">Telefono</label>
-                    <input class="form-control" type="text" placeholder="cod. pais + codigo area + numero" aria-label="" id="phone" name="user_phone">
-
+                    <input class="form-control" type="text" placeholder="cod. pais + codigo area + numero" aria-label="" id="telefono" name="telefono" required>
+                    <span></span><br>
                     <label for="asunto" class="form-label">Asunto</label>
-                    <input class="form-control" type="text" placeholder="Asunto" aria-label="Asunto" id="asunto" name="user_asunto">
-                    
-                    <label for="presentacion" class="form-label">Presentacion</label>
-                    <textarea class="form-control" id="msg" rows="3" name="user_msg"></textarea>
-                    
+                    <input class="form-control" type="text" placeholder="Asunto" aria-label="Asunto" id="asunto" name="asunto" required>
+                    <span></span><br>
+                    <label for="msg" class="form-label">Presentac&#237on</label>
+                    <textarea class="form-control" id="msg" rows="3" name="presentacion"></textarea>
+                    <span></span><br>
                      <label for="formFile" class="form-label">Agrega tu C.V.</label>
-                    <input class="form-control" type="file" id="formFile" name="user_formFile"><br>
-
-                    <input type="submit" value="Enviar Formulario" />
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/trabaja.html">
+                    <input class="form-control" type="file" id="formFile" name="curriculum" required>
+                    <span></span><br>
+                    <input type="submit" value="Enviar Formulario" id="bton" />
+                   <input type="hidden" name="_next" value="https://proyecto-tecnodidacta.netlify.app/trabaja.html">
                 </form>    
                 
             </div>
@@ -77,6 +80,7 @@
                 <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x" style="color: black;"></i></a></li>
               </ul>
               <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h5>
+              <p><a class="footer-items" href="index.html">Inicio</a><a class="footer-items" href="contacto.html">Contactate con nosotros </a><a class="footer-items" href="trabaja.html"> Te gustaria ser parte de Tecnodidacta?</a></p>
         </div>
     </div>
     <script>

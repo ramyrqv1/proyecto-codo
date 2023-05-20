@@ -26,7 +26,7 @@
     left: 0;
     /* background-color: rgba(187, 185, 185, 0.732); */
     background: rgba(0, 0, 0, 0.141);
-    position: fixed;
+    position: sticky;
     z-index: 999;
   }
   
@@ -35,7 +35,7 @@
     background-color: whitesmoke;
     padding:0 5px;
   }
-  
+
   .footer {
     grid-area: footer;
     background-color: rgba(0, 0, 0, 0.104);
@@ -274,18 +274,22 @@
     margin-top: 20px;
     margin-left: 20px;
   }
-  @media screen and (max-width: 770px){
+  @media screen and (max-width: 768px){
     .nombre-titulo{
-      background: url(../img/fondo-1.png);
-      background-size: cover;
+      background: white, url(../img/fondo-1.png);
+      background-size: contain;
+      background-position: center bottom;
       background-repeat: no-repeat;
     }
     .titulo{
-    font-size: 6vh;
-  }
+    font-size: 8vh;
+    padding-left: 10px;
+    }
   .titulo-desc{
     font-size: 3vh;
     text-shadow: rgba(24, 24, 26, 0.677) 2px 2px 4px;
+    margin-top: 1.5em;
+    padding-bottom: 1em;
   }
   .titulo-descripcion{
     font-size: 2.5vh;
@@ -342,10 +346,23 @@
     flex-wrap: wrap;
     padding: 3%;
   }
+  .content h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vh;
+    color: rgba(38, 6, 244, 0.518);
+  }
   .content-perfil{
-    flex-basis: 17rem;
+    flex-basis: 30rem;
     flex-grow: 1;
     text-align: center;
+  }
+  .content-perfil p{
+    background: #1eb49419;
+    text-align: left;
+    padding: 5px 10px;
+    margin: auto 10px;
+    border-radius: 10px;
   }
   .form-trabaja{
     flex-basis: 0;
@@ -360,7 +377,320 @@
   .form-trabaja label{
     margin-top: 3px;
   }
+  .error{
+    color: red; 
+  }
+  .invalido{
+    border: solid 1px red ;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  }
+  #bton{
+    border-radius: 10px;
+    margin: 10px 30%;
+    text-align: center;
+    background:  #24cfaa9f;
+  }
+  #bton:active {
+    background: #1eb493;
+    border-radius: 10px;
+    background: #1da88a;
+    box-shadow: inset 8px 8px 12px #198f75,
+              inset -8px -8px 12px #21c19f;
+    }
 
+  /*---------------contacto--------------------  */
+.content-contacto{
+  display: flex;
+  flex-direction: column;
+}
+.form-contacto{
+  flex-basis: 0;
+  flex-grow: 9;
+  min-width: 50%;
+  padding: 2rem 4rem;
+  margin: 2rem 20%;
+  border-radius: 15px;
+  box-shadow: inset 10px 10px 20px #adadad,
+  inset -15px -15px 15px #ffffff;
+}
+.form-contacto label{
+  margin-top: 3px;
+}
+.titulo-contacto{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.titulo-contacto div{
+font-size:4rem;
+color:rgb(75, 75, 75);
+}
+.titulo-contacto h1{
+text-align: center;
+padding: 2rem 1rem 2rem 0 ;
+margin: 2rem 1rem 2rem 0;
+}
+
+@media screen and (max-width:768px) {
+.form-contacto{
+  margin:2rem 1rem;
+}
+.titulo-contacto div{
+  font-size:3rem;
+  color:rgb(75, 75, 75);
+}
+}
+
+@media screen and (max-width: 650px){
+.form-contacto{
+  margin:2rem 0.5rem;
+}
+.titulo-contacto div{
+  font-size:2rem;
+  color:rgb(75, 75, 75);
+}
+.titulo-contacto h1{
+  font-size: 4vw;
+  padding:0;
+  margin:2rem;
+}
+.titulo-contacto div{
+  font-size:4vw;
+  padding-top: 2.5rem;
+}
+}
+
+/* ---------- servicios ------------ */
+
+.main .p-servicios{
+font-size: 1.25vw;
+padding: 2rem 4rem;
+text-align: center;
+}
+
+.servicios{
+font-weight: bold;
+text-align: center;
+padding-top:3rem;
+}
+.contenido-asesorias h2{
+font-size: 2vw;
+margin: 2rem;
+}
+.contenido-asesorias li{
+text-align: left;
+margin: 4rem 2rem 0rem 2rem;
+}
+
+article{
+margin: 0.2rem;
+text-align: center;
+
+}
+.grid{
+display:grid;
+grid-template-columns: 1fr 3fr;
+grid-template-areas:
+"precio contenido";
+padding: 3rem 0rem 3rem 0rem;
+}
+
+
+.precio{
+grid-template: precio;
+}
+
+.contenido{
+grid-template: contenido;
+}
+
+
+.rel-abs{
+position:relative;
+}
+
+.imagen-precios{
+position:absolute;
+bottom:55%;
+right: 0%;
+width:13rem;
+height:auto;
+transition: transform .2s ease-in-out;
+}
+
+.imagen-precios:hover{
+transform: scale(0.8,0.8);
+
+}
+
+.imagen-modalidad{
+position:absolute;
+bottom:5%;
+left:0%;
+height:13rem;
+width:auto;
+
+}
+
+.imagen-principal{
+height:85%;
+width:auto;
+}
+
+.imagen-titulo{
+width: auto;
+height: 6rem;
+}
+
+
+.slider{
+width: 100%;
+height:auto;
+overflow: hidden;
+padding: 0;
+margin: 0;
+
+}
+
+.slider ul{
+display:flex;
+width:400%;
+animation: slide 60s infinite ease-in-out;
+
+}
+
+.slider li {
+list-style: none;
+width:100%;
+padding: 0;
+margin: 0;
+}
+
+.slider .imagen{
+width:95%;
+border-radius: 8%;
+padding: 1rem;
+}
+
+@keyframes slide {
+0%  {margin-left: 0%}
+20% {margin-left: 0%}
+
+25% {margin-left: -100%}
+45% {margin-left: -100%}
+
+50% {margin-left: -200%}
+70% {margin-left: -200%}
+
+75% {margin-left: -300%}
+95% {margin-left: -300%}
+
+}
+@media screen and (max-width:768px) {
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "precio" 
+  "contenido";
+  padding: 0.5rem 0rem;
+}
+.main .p-servicios{
+  font-size: 2.2vh;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+.contenido-asesorias h2{
+  font-size: 3vh;
+  margin: 1rem;
+}
+.contenido-asesorias li{
+  text-align: left;
+  margin: 4rem 2rem 0rem 2rem;
+}
+.slider ul{
+  text-align: center;
+  padding-left: 0rem;
+}
+.imagen-precios{
+  height: 12rem;
+  width: auto;
+  position:absolute;
+  bottom:55%;
+  right: 7%;
+}
+
+.imagen-modalidad{
+  position:absolute;
+  bottom:10%;
+  left:5%;
+}
+.mod-hibrid{
+  position:absolute;
+  bottom:10%;
+  left:5%;
+}
+
+}
+
+@media screen and (max-width:650px) {
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "precio" 
+  "contenido";
+  padding: 0.1rem 0rem;
+}
+.contenido{
+  padding: 0rem 0rem 2rem 0;
+}
+.main .p-servicios{
+  font-size: 2.2vh;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.contenido-asesorias h2{
+  font-size: 3vh;
+  margin: 2rem;
+}
+.contenido-asesorias li{
+  text-align: left;
+  margin: 4rem 2rem;
+}
+.imagen-principal{
+  height: 30rem;
+  width: auto;
+}
+.imagen-modalidad{
+  height:11rem;
+  width:auto;
+  position:absolute;
+  bottom:12%;
+  left:2%;
+}
+.mod-hibrid{
+  height:11rem;
+  width:auto;
+  position:absolute;
+  bottom:25%;
+  left:5%;
+}
+.imagen-precios{
+  height:10rem;
+  width:auto;
+  position:absolute;
+  bottom:55%;
+  right: 5%;
+}
+.slider ul{
+  text-align: center;
+  padding-left: 0rem;
+}
+}
   /* --------------corte pequeño */
   @media screen and (max-width: 320px){
     .nav-menu{
