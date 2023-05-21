@@ -289,6 +289,8 @@
     .titulo{
     font-size: 10vh;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
     }
   .titulo-desc{
     font-size: 4vh;
@@ -342,7 +344,8 @@
 
   }
   .footer-items{
-    margin:5px 20px;
+    margin:10px 20px;
+    text-align: center;
   }
   /* -------trabaja con nosotros-------- */
   .content{
@@ -697,7 +700,7 @@ padding: 1rem;
 }
 }
   /* --------------corte pequeño */
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 400px){
     .nav-menu{
     margin-left: 0;
     width: 100%;
@@ -723,7 +726,7 @@ padding: 1rem;
       margin: 20px 5px;
     }
     .ejes iframe{
-      min-width: 280px;
+      min-width: 380px;
       margin-top: 20px;
       margin-left: 0;
     }
@@ -743,7 +746,7 @@ padding: 1rem;
      margin: 20px 5px;
     } 
     .competencias-1 iframe{
-      min-width: 280px;
+      min-width: 380px;
       margin-top: 20px;
       margin-left: 0;
     }
