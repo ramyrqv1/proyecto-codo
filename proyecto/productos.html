@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-nosotros.css">
     <!-- animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-     <!-- font awesome -->
-     <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
-     <!-- icono title -->
-     <link rel="icon" href="assets/img/logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+    <!-- icono title -->
+    <link rel="icon" href="assets/img/logo.ico">
+    <link rel="stylesheet" href="assets/css/producto.css">
     <style>
         .btn-animate {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -37,28 +39,32 @@
 
 <body>
     <header class="header">
-            <nav class="navi">
-                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
-                <button class="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
-                    <li class="nav-item"><a href="servicios.html" class="nav-menu-link nav-links">nuestros servicios</a></li>
-                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
-                    <li class="nav-item"><a href="productos.html" class="nav-menu-link nav-links">CRUD</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
-                    
-                </ul>
-            </nav>
+        <nav class="navi">
+            <a href="index.html"><img class="logo animate__animated animate__lightSpeedInRight"
+                    src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
+                <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-menu-link nav-links">nuestros servicios</a>
+                </li>
+                <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i
+                            class="fa-solid fa-user"></i></a></li>
+
+            </ul>
+        </nav>
     </header>
     <main>
         <div id="app" class="container">
-            <h1>Productos</h1>
+            <h1>Productos Tecnodidacta</h1>
             <br>
             <!-- <a class="btn btn-primary" href="producto-create.html">Nuevo</a> -->
             <!-- <a class="btn btn-primary btn-animate" href="producto-create.html">Nuevo</a> -->
-            <a class="btn btn-primary animate__animated animate__heartBeat btn-animate" href="producto-create.html">Nuevo</a>
+            <a class="btn btn-primary animate__animated animate__heartBeat btn-animate"
+                href="producto-create.html">Agregar Nuevo Producto</a>
             <br><br>
             <div v-if="error">
                 <p>Lo sentimos, ha ocurrido un error.</p>

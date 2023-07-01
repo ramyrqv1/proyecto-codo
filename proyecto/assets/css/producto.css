@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(38, 38, 100);
+    padding: 2rem 0;
+    font-size: 3rem;
+
+}
+
+table th {
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+}
+
+.btn {
+    margin: 25px 5px;
+}
+
+.nuevo {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(74, 16, 167);
+}
+
+form label {
+    margin: 10px 5px;
+    font-weight: bold;
+
+}
+
+form input {
+    margin: 5px 2px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 2px #ecf0f300,
+        5px 5px 10px #a7aaaf, -5px -5px 10px #ffffff;
+}
