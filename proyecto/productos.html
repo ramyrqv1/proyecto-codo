@@ -65,6 +65,8 @@
             <!-- <a class="btn btn-primary btn-animate" href="producto-create.html">Nuevo</a> -->
             <a class="btn btn-primary animate__animated animate__heartBeat btn-animate"
                 href="producto-create.html">Agregar Nuevo Producto</a>
+            <a class="btn btn-success  animate__animated animate__heartBeat btn-animate"
+                href="home-servicio.html">Listar Productos</a>
             <br><br>
             <div v-if="error">
                 <p>Lo sentimos, ha ocurrido un error.</p>
@@ -126,6 +128,15 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
     <script src="assets/js/productos.js"></script>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle")
+        const navMenu = document.querySelector(".nav-menu")
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-menu_visible")
+        })
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/producto.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+    <!-- icono title -->
+    <link rel="icon" href="assets/img/logo.ico">
+    <title>Tecnodidacta</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <nav class="navi">
+                <a href="index.html"><img class="logo animate__animated animate__lightSpeedInRight"
+                        src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a>
+                    </li>
+                    <li class="nav-item"><a href="servicios.html" class="nav-menu-link nav-links">nuestros servicios</a>
+                    </li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-menu-link nav-links">CRUD</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i
+                                class="fa-solid fa-user"></i></a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <main class="main">
+
+            <div id="app" class="container">
+                <h1>Productos Tecnodidacta</h1>
+
+                <div v-if="error">
+                    <p>Lo sentimos, ha ocurrido un error.</p>
+                </div>
+                <div v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando...</p>
+                    </section>
+                    <section v-else>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Nivel</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Iterar sobre cada producto -->
+                                    <tr class="" v-for="producto in productos">
+                                        <td scope="row">{{producto.id}}</td>
+                                        <td>{{producto.nombre}}</td>
+                                        <td>{{producto.nivel}}</td>
+                                        <td>
+                                            <img width="150" :src="producto.imagen" :alt="producto.nombre">
+                                        </td>
+                                        <td>{{producto.precio}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        <!-- footer -->
+        <div class="footer">
+            <!-- iconos de redes -->
+            <ul class="lista">
+                <li class="lista-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x"
+                            style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x"
+                            style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x"
+                            style="color: black;"></i></a></li>
+            </ul>
+            <!-- info footer -->
+            <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i>
+                Tecnodidacta</h5>
+            <a class="footer-items"
+                href="https://www.freepik.es/vector-gratis/coleccion-ilustracion-red-neuronal_3841816.htm#query=baner%20web%20de%20tecnologia&position=31&from_view=search&track=ais">Imagen
+                de rawpixel.com en Freepik</a>
+            <p><a class="footer-items" href="contacto.html">Contactate con nosotros </a><a class="footer-items"
+                    href="trabaja.html"> Te gustaria ser parte de Tecnodidacta?</a></p>
+        </div>
+    </div>
+
+    <script>
+        const navToggle = document.querySelector(".nav-toggle")
+        const navMenu = document.querySelector(".nav-menu")
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-menu_visible")
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
+    <script src="assets/js/productos.js"></script>
+</body>
+
+</html>
